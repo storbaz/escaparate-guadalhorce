@@ -14,11 +14,16 @@
 <meta property="og:title" content="Escaparate del Guadalhorce · Alojamientos, tiendas y restaurantes en Alhaurín, Coín y Pizarra">
 <meta property="og:description" content="Guía gratuita de alojamientos, tiendas, bares y artesanía de Alhaurín el Grande, Coín y Pizarra. Fichas preparadas para imprimir su QR y recibir contactos directos.">
 <meta property="og:url" content="https://storbaz.github.io/escaparate-guadalhorce/">
+<meta property="og:image" content="https://storbaz.github.io/escaparate-guadalhorce/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Escaparate del Guadalhorce · Alojamientos, tiendas y restaurantes en Alhaurín, Coín y Pizarra">
+<meta name="twitter:description" content="Guía gratuita de alojamientos, tiendas, bares y artesanía de Alhaurín el Grande, Coín y Pizarra. Fichas preparadas para imprimir su QR y recibir contactos directos.">
+<meta name="twitter:image" content="https://storbaz.github.io/escaparate-guadalhorce/assets/og-image.svg">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=2">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuesta algo aparecer en el escaparate?","acceptedAnswer":{"@type":"Answer","text":"No. La ficha es gratuita para el negocio. Solo se pide que confirme o corrija sus datos."}},{"@type":"Question","name":"¿Qué hace el código QR?","acceptedAnswer":{"@type":"Answer","text":"Abre directamente la ficha del negocio para que el visitante pueda llamar o escribir por WhatsApp."}}]}</script>
 <script src="assets/qrcode.min.js"></script>
-<script src="assets/app.js?v=1" defer></script>
+<script src="assets/app.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -28,7 +33,10 @@
       <img src="assets/icon.svg" alt="" width="34" height="34">
       <span>Escaparate del Guadalhorce</span>
     </a>
-    <a class="back-link" href="index.html">← Volver a la guía</a>
+    <nav class="header-nav">
+      <a class="back-link" href="index.html">← Volver a la guía</a>
+      <a class="back-link" href="qrs.html">QR para imprimir</a>
+    </nav>
   </div>
 </header>
 <main id="contenido" class="">
@@ -42,11 +50,31 @@
       <span class="badge"><strong>0 €</strong> para el dueño</span>
       <span class="badge"><strong>3</strong> pueblos</span>
     </div>
+    <div class="actions">
+      <a class="button button-primary" href="qrs.html">Ver los 10 QR para imprimir</a>
+    </div>
+  </div>
+</section>
+<section class="wrap filters" aria-label="Filtrar negocios">
+  <div class="filter-row">
+    <span class="filter-label">Pueblo</span>
+    <button class="chip is-active" type="button" data-filter="pueblo" data-value="todos">Todos</button>
+    <button class="chip" type="button" data-filter="pueblo" data-value="Alhaurín el Grande">Alhaurín el Grande</button>
+    <button class="chip" type="button" data-filter="pueblo" data-value="Coín">Coín</button>
+    <button class="chip" type="button" data-filter="pueblo" data-value="Pizarra">Pizarra</button>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">Tipo</span>
+    <button class="chip is-active" type="button" data-filter="categoria" data-value="todos">Todos</button>
+    <button class="chip" type="button" data-filter="categoria" data-value="alojamiento">Alojamientos</button>
+    <button class="chip" type="button" data-filter="categoria" data-value="producto">Producto local</button>
+    <button class="chip" type="button" data-filter="categoria" data-value="restaurante">Restaurantes</button>
+    <button class="chip" type="button" data-filter="categoria" data-value="artesania">Artesanía</button>
   </div>
 </section>
 <section class="wrap">
-  <div class="grid">
-<article class="card">
+  <div class="grid" id="lista-negocios">
+<article class="card" data-pueblo="Alhaurín el Grande" data-categoria="producto">
   <span class="num">01</span>
   <h2><a href="fichas/aceites-molisur.html">Aceites Molisur</a></h2>
   <div class="town">Alhaurín el Grande · Almazara · oleoturismo · tienda</div>
@@ -54,10 +82,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/aceites-molisur.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/aceites-molisur.html" aria-label="Código QR de la ficha de Aceites Molisur"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/aceites-molisur.html" aria-label="Código QR de la ficha de Aceites Molisur"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Alhaurín el Grande" data-categoria="restaurante">
   <span class="num">02</span>
   <h2><a href="fichas/restaurante-los-arcos.html">Restaurante Los Arcos</a></h2>
   <div class="town">Alhaurín el Grande · Restaurante</div>
@@ -65,10 +93,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/restaurante-los-arcos.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/restaurante-los-arcos.html" aria-label="Código QR de la ficha de Restaurante Los Arcos"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/restaurante-los-arcos.html" aria-label="Código QR de la ficha de Restaurante Los Arcos"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Alhaurín el Grande" data-categoria="producto">
   <span class="num">03</span>
   <h2><a href="fichas/embutidos-moreno-plaza.html">Embutidos Moreno Plaza</a></h2>
   <div class="town">Alhaurín el Grande · Tienda de producto local</div>
@@ -76,10 +104,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/embutidos-moreno-plaza.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/embutidos-moreno-plaza.html" aria-label="Código QR de la ficha de Embutidos Moreno Plaza"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/embutidos-moreno-plaza.html" aria-label="Código QR de la ficha de Embutidos Moreno Plaza"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Coín" data-categoria="alojamiento">
   <span class="num">04</span>
   <h2><a href="fichas/finca-la-fuente-barranco-blanco.html">Finca La Fuente Barranco Blanco</a></h2>
   <div class="town">Coín · Casa rural · 6 plazas</div>
@@ -87,10 +115,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/finca-la-fuente-barranco-blanco.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/finca-la-fuente-barranco-blanco.html" aria-label="Código QR de la ficha de Finca La Fuente Barranco Blanco"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/finca-la-fuente-barranco-blanco.html" aria-label="Código QR de la ficha de Finca La Fuente Barranco Blanco"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Coín" data-categoria="alojamiento">
   <span class="num">05</span>
   <h2><a href="fichas/molino-de-saladilla.html">Molino de Saladilla (B&amp;B)</a></h2>
   <div class="town">Coín · Alojamiento rural · 16 plazas</div>
@@ -98,10 +126,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/molino-de-saladilla.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/molino-de-saladilla.html" aria-label="Código QR de la ficha de Molino de Saladilla (B&amp;B)"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/molino-de-saladilla.html" aria-label="Código QR de la ficha de Molino de Saladilla (B&amp;B)"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Coín" data-categoria="artesania">
   <span class="num">06</span>
   <h2><a href="fichas/nabarros-coin.html">Nabarros Coín</a></h2>
   <div class="town">Coín · Artesanía · cerámica</div>
@@ -109,10 +137,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/nabarros-coin.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/nabarros-coin.html" aria-label="Código QR de la ficha de Nabarros Coín"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/nabarros-coin.html" aria-label="Código QR de la ficha de Nabarros Coín"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Coín" data-categoria="restaurante">
   <span class="num">07</span>
   <h2><a href="fichas/coconut-cafe-tapas-con-arte.html">Coconut Café y Tapas con Arte</a></h2>
   <div class="town">Coín · Bar · restaurante</div>
@@ -120,10 +148,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/coconut-cafe-tapas-con-arte.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/coconut-cafe-tapas-con-arte.html" aria-label="Código QR de la ficha de Coconut Café y Tapas con Arte"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/coconut-cafe-tapas-con-arte.html" aria-label="Código QR de la ficha de Coconut Café y Tapas con Arte"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Pizarra" data-categoria="alojamiento">
   <span class="num">08</span>
   <h2><a href="fichas/cortijo-san-sebastian.html">Cortijo San Sebastián</a></h2>
   <div class="town">Pizarra · Casa rural · 10 plazas</div>
@@ -131,10 +159,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/cortijo-san-sebastian.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/cortijo-san-sebastian.html" aria-label="Código QR de la ficha de Cortijo San Sebastián"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/cortijo-san-sebastian.html" aria-label="Código QR de la ficha de Cortijo San Sebastián"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Pizarra" data-categoria="producto">
   <span class="num">09</span>
   <h2><a href="fichas/cata-y-corte.html">Cata y Corte</a></h2>
   <div class="town">Pizarra · Bar · tienda</div>
@@ -142,10 +170,10 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/cata-y-corte.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/cata-y-corte.html" aria-label="Código QR de la ficha de Cata y Corte"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/cata-y-corte.html" aria-label="Código QR de la ficha de Cata y Corte"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
-<article class="card">
+<article class="card" data-pueblo="Pizarra" data-categoria="restaurante">
   <span class="num">10</span>
   <h2><a href="fichas/asador-don-joaquin.html">Asador Don Joaquín</a></h2>
   <div class="town">Pizarra · Restaurante asador</div>
@@ -153,13 +181,13 @@
   <div class="actions">
     <a class="button button-primary button-block" href="fichas/asador-don-joaquin.html">Ver ficha y QR</a>
   </div>
-  <div class="qr-box" data-qr="fichas/asador-don-joaquin.html" aria-label="Código QR de la ficha de Asador Don Joaquín"></div>
+  <div class="qr-box" data-qr="https://storbaz.github.io/escaparate-guadalhorce/fichas/asador-don-joaquin.html" aria-label="Código QR de la ficha de Asador Don Joaquín"></div>
   <div class="qr-caption">Escanea para abrir esta ficha.</div>
 </article>
   </div>
   <div class="panel">
     <h2>Cómo funciona</h2>
-    <p>1. Tomamos los datos públicos que el negocio ya tiene en Google o en su web. 2. Preparamos la ficha y su QR. 3. El dueño solo confirma o corrige; no tiene que registraros ni usar ninguna app.</p>
+    <p>1. Tomamos los datos públicos que el negocio ya tiene en Google o en su web. 2. Preparamos la ficha y su QR. 3. El dueño solo confirma o corrige; no tiene que registraros ni usar ninguna herramienta especial.</p>
     <p class="qr-note">Si eres el dueño de alguno de estos negocios y quieres cambiar el teléfono, añadir el WhatsApp o quitar la ficha, escríbenos y lo hacemos sin coste.</p>
   </div>
 </section>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Escaparate del Guadalhorce">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#154b38"/>
+      <stop offset="1" stop-color="#1f6b4f"/>
+    </linearGradient>
+    <pattern id="trama" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M0 48 L48 0" stroke="#ffffff" stroke-opacity="0.07" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#fondo)"/>
+  <rect width="1200" height="630" fill="url(#trama)"/>
+  <circle cx="1040" cy="120" r="180" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="120" cy="540" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <text x="80" y="210" fill="#d8eadf" font-family="Segoe UI, Arial, sans-serif" font-size="30" letter-spacing="4">ALHAURÍN · COÍN · PIZARRA</text>
+  <text x="80" y="330" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">Escaparate del</text>
+  <text x="80" y="415" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">Guadalhorce</text>
+  <text x="80" y="500" fill="#d8eadf" font-family="Segoe UI, Arial, sans-serif" font-size="34">Alojamientos, tiendas y restaurantes con ficha y QR</text>
+  <rect x="80" y="548" width="300" height="6" rx="3" fill="#ffffff" fill-opacity="0.5"/>
+</svg>
