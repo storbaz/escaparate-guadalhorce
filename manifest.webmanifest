@@ -1,0 +1,15 @@
+{
+  "name": "Escaparate del Guadalhorce",
+  "short_name": "Guadalhorce",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfaf5",
+  "theme_color": "#1f6b4f",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
